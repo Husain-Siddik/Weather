@@ -10,10 +10,15 @@ const weatherStore = useweatherStore()
     <div
       class="mx-auto xlg:w-1/5 lg:w-1/5 md:w-2/5 border border-neutral-400 px-5 py-8 bg-[url('../assets/night-weather.png')]">
       <!-- search box -->
-      <div class="flex flex-col">
-        <h4 class=" text-center font-extrabold text-2xl capitalize mb-4"> Weather app</h4>
-        <input v-model="weatherStore.location_quiry" type="text" placeholder="City Name.."
-          class="input input-bordered input-primary w-full mx-auto" v-on:keyup.enter="weatherStore.LodeWeather()" />
+      <h4 class=" text-center font-extrabold text-2xl capitalize mb-4"> Weather app</h4>
+      <div class="flex justify-center items-center ">
+        <div>
+          <input v-model="weatherStore.location_quiry" type="text" placeholder="City Name.."
+            class="input input-bordered input-primary w-full mx-auto" v-on:keyup.enter="weatherStore.LodeWeather()" />
+        </div>
+        <div>
+          <button class="btn btn-accent lg:hidden md:hidden ml-3" @click="weatherStore.LodeWeather()">Check</button>
+        </div>
       </div>
       <!--  weather info -->
       <div class="text-center py-4 text-3xl ">
@@ -23,7 +28,7 @@ const weatherStore = useweatherStore()
           <!-- <h3>{{ countery_1 }} {{ country }}</h3> -->
         </div>
         <div class="">
-          <h2>Temp:{{ weatherStore.weather.current?.temp_c }} c</h2>
+          <h2>Temp:{{ weatherStore.weather.current?.temp_c }}°C</h2>
           <h3> but feels like {{ weatherStore.weather.current?.feelslike_c }}</h3>
           <h4> {{ weatherStore.weather.current?.cloud }}</h4>
           <!-- <h2>{{ weatherStore.weather.current.condition?.icon }}</h2> -->
