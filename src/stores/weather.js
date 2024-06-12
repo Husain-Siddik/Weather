@@ -16,7 +16,7 @@ export const useweatherStore = defineStore('weather',
 
     actions: {
       LodeWeather() {
-        fetch(`http://api.weatherapi.com/v1/current.json?key=baf209e30b3a49b6b4665406241106&q=${this.location_quiry}&aqi=no`)
+        fetch(`https://api.weatherapi.com/v1/current.json?key=baf209e30b3a49b6b4665406241106&q=${this.location_quiry}&aqi=no`)
           .then(response => response.json())
 
 
