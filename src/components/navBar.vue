@@ -20,7 +20,7 @@ import { RouterLink } from 'vue-router';
                             <RouterLink to="/">Home</RouterLink>
                         </li>
                         <li>
-                            <RouterLink to="/about">About</RouterLink>
+                            <RouterLink to="/weather">Weather</RouterLink>
                         </li>
                     </ul>
                 </div>
@@ -32,7 +32,7 @@ import { RouterLink } from 'vue-router';
                         <RouterLink to="/">Home</RouterLink>
                     </li>
                     <li>
-                        <RouterLink to="/about">About</RouterLink>
+                        <RouterLink to="/weather">weather</RouterLink>
                     </li>
                 </ul>
             </div>

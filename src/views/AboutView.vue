@@ -6,7 +6,7 @@ const weatherStore = useweatherStore()
 </script>
 
 <template>
-  <div class="about">
+  <div class="weatherapk">
     <div
       class="mx-auto xlg:w-1/5 lg:w-1/5 md:w-2/5 border border-neutral-400 px-5 py-8 bg-[url('../assets/night-weather.png')]">
       <!-- search box -->
